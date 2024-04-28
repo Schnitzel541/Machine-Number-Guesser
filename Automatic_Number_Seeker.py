@@ -19,5 +19,12 @@ else:
         guess_counter = guess_counter + 1
         list_numbers.append(x)
         print(x)
-    print(list_numbers)
+        
     print(f'It took the machine {guess_counter} guesses!')
+    print_list = input("Would you like to see a list of the numbers attempted? (Y/N?): ")
+    if print_list == "Y":
+        print(list_numbers)
+    elif print_list == "y":
+        print(list_numbers)
+    else:
+        print("Okay, bye")
